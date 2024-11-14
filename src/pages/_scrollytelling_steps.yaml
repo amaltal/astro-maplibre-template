@@ -6,7 +6,7 @@
   description: Welcome to my Atlas, through this project I have explored food stores in New York City and how different types of food retail is a means to explore different neighborhoods' characteristics. Please scroll to explore for yourself!
 
 - title: Exploring general retail food store options in NYC
-  center: [40.7118794, -73.9830259]
+  center: [-73.9830259, 40.7118794]
   zoom: 11
   pitch: 0
   bearing: 20

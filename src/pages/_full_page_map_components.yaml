@@ -9,16 +9,16 @@
     line-color: '#000000'
     line-width: 3
 
-- id: 'pizza'
-  label: 'Pizza Places'
+- id: 'retail'
+  label: 'Retail Food Stores'
   toggle: true
   visible: true
   data-type: 'geojson'
   layer-type: 'circle'
-  url: 'https://data.cityofnewyork.us/resource/43nn-pn8j.geojson?cuisine_description=Pizza&$limit=10000'
+  url: './Retail_food.geojson'
   paint:
-    circle-color: '#ff0000'
-    circle-radius: 5
+    circle-color: '#CC5500'
+    circle-radius: 3
   mouseEvent:
     - type: "click"
       content:

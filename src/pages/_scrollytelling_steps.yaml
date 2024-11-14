@@ -1,23 +1,23 @@
-- title: Introduction
+- title: Amalia Kamien Atlas
   center: [-74.0060, 40.7128]
   zoom: 10
   pitch: 0
   bearing: 0
-  description: Welcome to the map scrollytelling app. You can set position, zoom, pitch, and bearing via the top-level props.
+  description: Welcome to my Atlas, through this project I have explored food stores in New York City and how different types of food retail is a means to explore different neighborhoods' characteristics. Please scroll to explore for yourself!
 
-- title: Section Title - Squirrels in Central Park
-  center: [-73.96778, 40.78376]
-  zoom: 14
+- title: Exploring general retail food store options in NYC
+  center: [40.7118794, -73.9830259]
+  zoom: 11
   pitch: 0
   bearing: 20
   description: Now we zoom in. A layer is added from a geojson  Layer paint properties are passed, and layers are set to turn off when you continue scrolling via the `persist:false` attribute.
   
   layers:
   # id of layer
-  - id: 'squirrel-census'
+  - id: 'retail'
   # path to dataset 
   # note anything uploaded in the public/data folder will be uploaded to your site at url/data/file.png
-    url: './data/squirrel20241021.geojson'
+    url: './Retail_food.geojson'
   # type of symbol
     type: 'circle'
   # type of symbol

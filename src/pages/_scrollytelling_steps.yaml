@@ -10,7 +10,7 @@
   zoom: 11
   pitch: 0
   bearing: 20
-  description: Now we zoom in. A layer is added from a geojson  Layer paint properties are passed, and layers are set to turn off when you continue scrolling via the `persist:false` attribute.
+  description: To start, let's take a look at general retail food store options in NYC, we will dive in deeper.
   
   layers:
   # id of layer
@@ -29,23 +29,25 @@
       circle-color: '#826260'
       circle-opacity: 0.8
 
-- title: Polygon Layer
-  # center: [-73.96778, 40.78376]
-  center: [-74.00739, 40.67930]
+- title: Chinatown
+  # center: [-73.995205, 40.715957]
+  center: [-73.995205, 40.715957]
   zoom: 14
   pitch: 0
   bearing: 20
-  description: Now we zoom to a new location. And add a polygon layer of the innundation zone from Hurricane Sandy via GeoJSON endpoint. Layer paint properties are passed (notice they are different from the syntax for the point layer). 
+  description: Let's explore Chinatown as the first neighborhood well be looking at. 
   layers:
-  - id: 'sandy'
-    url: 'https://data.cityofnewyork.us/resource/5xsi-dfpx.geojson'
-    type: 'fill'
+  - id: 'retail'
+    url: './Retail_food.geojson'
+    type: 'circle'
+  # type of symbol
     data-type: 'geojson'
-    layer-type: 'fill'
-    persist: false
+    layer-type: 'circle'
+    persist: true
     paint:
-      fill-color: '#c1e2e6'
-      fill-opacity: 0.8
+      circle-radius: 5
+      circle-color: '#826260'
+      circle-opacity: 0.8
 
 
 

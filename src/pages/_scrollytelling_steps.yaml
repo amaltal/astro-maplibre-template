@@ -29,13 +29,13 @@
       circle-color: '#826260'
       circle-opacity: 0.8
 
-- title: Chinatown
+- title: Methods of Exploration
   # center: [-73.995205, 40.715957]
   center: [-73.995205, 40.715957]
-  zoom: 14
-  pitch: 0
+  zoom: 12
+  pitch: 10
   bearing: 20
-  description: Let's explore Chinatown as the first neighborhood well be looking at. 
+  description: We will be looking at three different areas of interest through the lens of retail food stores in order to explore the story that is able to be told through food.
   layers:
   - id: 'retail'
     url: './Retail_food.geojson'
@@ -51,11 +51,42 @@
 
 
 
-- title: London
-  center: [-0.1278, 51.5074]
-  zoom: 8
-  pitch: 30
+- title: The first is Economic.
+  center: [-73.949165, 40.734331]
+  zoom: 10
+  pitch: 20
   bearing: -10
-  description: You can change the position of the overlay div using the position attribute, and can add images using the media attribute.
-  media: https://img.atlasobscura.com/OGZXBPY6hP2AXBi-M97MjAYHr46wOlG4iPA1pz2owEI/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTI3/NzEyMWY1NWM5ZWIx/ZDRfMTM3ODE0MjA1/OTNfMjQ0ZmUxZDJj/OV9rLmpwZw.jpg
+  description: By looking at economic factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  layers:
+  - id: 'propval'
+    url: './data/propval.geojson'
+    type: 'circle'
+  # type of symbol
+    data-type: 'geojson'
+    layer-type: 'circle'
+    persist: true
+    paint:
+      circle-radius: 5
+      circle-color: '#0033ff'
+      circle-opacity: 0.8
+  media: 
+  position: right
+
+  
+- title: The second is Health.
+  center: [-73.949165, 40.734331]
+  zoom: 10
+  pitch: 20
+  bearing: -10
+  description: By looking at economic factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  media: 
+  position: right
+
+- title: The third is cultural.
+  center: [-73.949165, 40.734331]
+  zoom: 10
+  pitch: 20
+  bearing: -10
+  description: By looking at economic factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  media: 
   position: right

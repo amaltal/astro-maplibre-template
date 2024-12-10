@@ -1,4 +1,4 @@
-- title: Amalia Kamien Atlas
+- title: Food Store Stories
   center: [-74.0060, 40.7128]
   zoom: 10
   pitch: 0
@@ -57,10 +57,7 @@
   pitch: 20
   bearing: -10
   description: By looking at economic factors of different neighborhoods and comparing them to food options, a connection is drawn.
-  layers:
-  - id: 'propval'
-    url: './data/propval.geojson'
-    type: 'circle'
+
   # type of symbol
     data-type: 'geojson'
     layer-type: 'circle'
@@ -78,15 +75,15 @@
   zoom: 10
   pitch: 20
   bearing: -10
-  description: By looking at economic factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  description: By looking at health factors of different neighborhoods and comparing them to food options, a connection is drawn.
   media: 
   position: right
 
-- title: The third is cultural.
+- title: The third is Cultural.
   center: [-73.949165, 40.734331]
   zoom: 10
   pitch: 20
   bearing: -10
-  description: By looking at economic factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  description: By looking at cultural factors of different neighborhoods and comparing them to food options, a connection is drawn.
   media: 
   position: right

@@ -56,7 +56,7 @@
   zoom: 10
   pitch: 20
   bearing: -10
-  description: By looking at economic factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  description: What we are seeing here is the property value sum per neighborhood. This helps us understand which neighborhoods in New York City hold the greatest real estate value.
   media: 
   position: right
   layers:
@@ -75,9 +75,9 @@
   zoom: 11
   pitch: 20
   bearing: -10
-  description: What we are seeing here is the property value sum per neighborhood. This helps us understand which neighborhoods in New York City hold the greatest real estate value.
+  description: Using the Food Retail Store data, light blue dots represent stores that self categorize as "delis, mart's, or Convennience stores", while dark blue dots are the rest of the retail food options including bigger grocery stores like Whole Foods. It is interesting to see how the "bodegas" are more prevelant in the neighborhoods with lower property value, and the inverse is true as well, higher property areas contain fewer bodegas.
   media: 
-  position: right
+  position: left
   layers:
   - id: 'propval'
     url: './data/propvalneighborhoodsum.geojson'
@@ -89,15 +89,15 @@
       fill-color: ['get', 'color']
       fill-opacity: 1 
   - id: 'retail'
-    url: './data/retailbodega.geojson'
+    url: './data/retail1.geojson'
     type: 'circle'
   # type of symbol
     data-type: 'geojson'
     layer-type: 'circle'
     persist: true
     paint:
-      circle-radius: 3
-      circle-color: ['get', 'Bodega']
+      circle-radius: 2.5
+      circle-color: ['get', 'color']
       circle-opacity: 0.8
 
   

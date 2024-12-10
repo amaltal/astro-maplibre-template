@@ -57,15 +57,6 @@
   pitch: 20
   bearing: -10
   description: By looking at economic factors of different neighborhoods and comparing them to food options, a connection is drawn.
-
-  # type of symbol
-    data-type: 'geojson'
-    layer-type: 'circle'
-    persist: true
-    paint:
-      circle-radius: 5
-      circle-color: '#0033ff'
-      circle-opacity: 0.8
   media: 
   position: right
 

@@ -72,7 +72,7 @@
 
 - title: Economic Exploration
   center: [-73.949165, 40.734331]
-  zoom: 12
+  zoom: 11
   pitch: 20
   bearing: -10
   description: What we are seeing here is the property value sum per neighborhood. This helps us understand which neighborhoods in New York City hold the greatest real estate value.
@@ -89,15 +89,15 @@
       fill-color: ['get', 'color']
       fill-opacity: 1 
   - id: 'retail'
-    url: './data/Retail_food.geojson'
+    url: './data/retailbodega.geojson'
     type: 'circle'
   # type of symbol
     data-type: 'geojson'
     layer-type: 'circle'
     persist: true
     paint:
-      circle-radius: 5
-      circle-color: '#826260'
+      circle-radius: 3
+      circle-color: ['get', 'Bodega']
       circle-opacity: 0.8
 
   

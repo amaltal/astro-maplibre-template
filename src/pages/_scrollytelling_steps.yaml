@@ -38,7 +38,7 @@
   description: We will be looking at three different areas of interest through the lens of retail food stores in order to explore the story that is able to be told through food.
   layers:
   - id: 'retail'
-    url: './Retail_food.geojson'
+    url: './data/Retail_food.geojson'
     type: 'circle'
   # type of symbol
     data-type: 'geojson'
@@ -59,6 +59,46 @@
   description: By looking at economic factors of different neighborhoods and comparing them to food options, a connection is drawn.
   media: 
   position: right
+  layers:
+  - id: 'propval'
+    url: './data/propvalneighborhoodsum.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'color']
+      fill-opacity: 1 
+
+- title: Economic Exploration
+  center: [-73.949165, 40.734331]
+  zoom: 12
+  pitch: 20
+  bearing: -10
+  description: What we are seeing here is the property value sum per neighborhood. This helps us understand which neighborhoods in New York City hold the greatest real estate value.
+  media: 
+  position: right
+  layers:
+  - id: 'propval'
+    url: './data/propvalneighborhoodsum.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'color']
+      fill-opacity: 1 
+  - id: 'retail'
+    url: './data/Retail_food.geojson'
+    type: 'circle'
+  # type of symbol
+    data-type: 'geojson'
+    layer-type: 'circle'
+    persist: true
+    paint:
+      circle-radius: 5
+      circle-color: '#826260'
+      circle-opacity: 0.8
 
   
 - title: The second is Health.

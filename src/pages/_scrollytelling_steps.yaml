@@ -198,7 +198,7 @@
   zoom: 10
   pitch: 20
   bearing: -10
-  description: By looking at cultural factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  description: This map shows neighborhood rates of family size, where darker purple indicates higher family sizes.
   media: 
   position: right
   layers:
@@ -217,7 +217,7 @@
   zoom: 10
   pitch: 20
   bearing: -10
-  description: By looking at cultural factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  description: By measuring how many food retail stores are in these boundaries (both bodegas and non bodegas), we can see how food options are serving different comminities. 
   media: 
   position: right
   layers:
@@ -231,4 +231,40 @@
       fill-color: ['get', 'hex']
       fill-opacity: 1
 
+- title: The third is Cultural.
+  center: [-73.968820, 40.702441]
+  zoom: 13
+  pitch: 20
+  bearing: -10
+  description: This is seen very dramatically in the Brooklyn Navy Yard, where there is a high rate of family size, but food retail stores don't serve areas like these fairly.
+  media: 
+  position: right
+  layers:
+  - id: 'sizefam'  
+    url: './data/reprofam.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'color']
+      fill-opacity: 1
 
+- title: Brooklyn Navy Yard
+  center: [-73.968820, 40.702441]
+  zoom: 13
+  pitch: 20
+  bearing: -10
+  description: 
+  media: 
+  position: right
+  layers:
+  - id: 'retailpern'  
+    url: './data/retailneigh.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'hex']
+      fill-opacity: 1

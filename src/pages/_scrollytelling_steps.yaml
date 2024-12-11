@@ -118,7 +118,56 @@
   zoom: 10
   pitch: 20
   bearing: -10
-  description: By looking at health factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  description: This map represents diabetes prevalence in the different areas, where the darker the orange the higher the rates.
+  media: 
+  position: right
+  layers:
+  - id: 'health'  
+    url: './data/reprohealth.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'color']
+      fill-opacity: 1
+
+- title: Health Continued
+  center: [-73.949165, 40.734331]
+  zoom: 10
+  pitch: 20
+  bearing: -10
+  description: When bodegas are overlaid on top of obesity rates, we can see they are more concentrated in areas of higher obesity.
+  media: 
+  position: right
+  layers:
+  - id: 'health'  
+    url: './data/reprohealth.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'color']
+      fill-opacity: 1
+  - id: 'bodeg'
+    url: './data/bodegalay.geojson'
+    type: 'circle'
+  # type of symbol
+    data-type: 'geojson'
+    layer-type: 'circle'
+    persist: true
+    paint:
+      circle-radius: 2
+      circle-color: ['get', 'color']
+      circle-opacity: 0.9
+
+- title: Health Continued
+  center: [-73.949165, 40.734331]
+  zoom: 10
+  pitch: 20
+  bearing: -10
+  description: When the rest of the retail food stores are overlaid, a more even distribution is evident.
   media: 
   position: right
   layers:
@@ -139,9 +188,10 @@
     layer-type: 'circle'
     persist: true
     paint:
-      circle-radius: 2.5
+      circle-radius: 2
       circle-color: ['get', 'color']
-      circle-opacity: 0.8
+      circle-opacity: 0.4
+
 
 - title: The third is Cultural.
   center: [-73.949165, 40.734331]

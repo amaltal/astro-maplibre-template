@@ -88,8 +88,8 @@
     paint:
       fill-color: ['get', 'color']
       fill-opacity: 1 
-  - id: 'retail'
-    url: './data/retail1.geojson'
+  - id: 'bodega'
+    url: './data/bodegalay.geojson'
     type: 'circle'
   # type of symbol
     data-type: 'geojson'
@@ -97,8 +97,20 @@
     persist: true
     paint:
       circle-radius: 2.5
-      circle-color: ['get', 'color']
-      circle-opacity: 0.8
+      circle-color: '#191970'
+      circle-opacity: 0.7
+  - id: 'notb'
+    url: './data/notbodega.geojson'
+    type: 'circle'
+  # type of symbol
+    data-type: 'geojson'
+    layer-type: 'circle'
+    persist: true
+    paint:
+      circle-radius: 2.5
+      circle-color: '#B0E0E6'
+      circle-opacity: 0.7
+  
 
   
 - title: The second is Health.
@@ -109,6 +121,18 @@
   description: By looking at health factors of different neighborhoods and comparing them to food options, a connection is drawn.
   media: 
   position: right
+  layers:
+  - id: 'notb'
+    url: './data/notbodega.geojson'
+    type: 'circle'
+  # type of symbol
+    data-type: 'geojson'
+    layer-type: 'circle'
+    persist: true
+    paint:
+      circle-radius: 2.5
+      circle-color: ['get', 'color']
+      circle-opacity: 0.8
 
 - title: The third is Cultural.
   center: [-73.949165, 40.734331]
@@ -129,12 +153,23 @@
       fill-color: ['get', 'color']
       fill-opacity: 1
 
-- title: The second is Health.
+- title: The third is Cultural.
   center: [-73.949165, 40.734331]
   zoom: 10
   pitch: 20
   bearing: -10
-  description: By looking at health factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  description: By looking at cultural factors of different neighborhoods and comparing them to food options, a connection is drawn.
   media: 
   position: right
+  layers:
+  - id: 'retailpern'  
+    url: './data/retailneigh.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'hex']
+      fill-opacity: 1
+
 

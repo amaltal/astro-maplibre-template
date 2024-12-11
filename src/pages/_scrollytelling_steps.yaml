@@ -203,13 +203,13 @@
   position: right
   layers:
   - id: 'sizefam'  
-    url: './data/reprofam.geojson'
+    url: './data/famhex.geojson'
     type: 'fill'
     data-type: 'geojson'
     layer-type: 'fill'
     persist: true
     paint:
-      fill-color: ['get', 'color']
+      fill-color: ['get', 'hex']
       fill-opacity: 1
 
 - title: The third is Cultural.
@@ -222,7 +222,7 @@
   position: right
   layers:
   - id: 'retailpern'  
-    url: './data/retailneigh.geojson'
+    url: './data/retailneighhex.geojson'
     type: 'fill'
     data-type: 'geojson'
     layer-type: 'fill'
@@ -241,13 +241,13 @@
   position: right
   layers:
   - id: 'sizefam'  
-    url: './data/reprofam.geojson'
+    url: './data/famhex.geojson'
     type: 'fill'
     data-type: 'geojson'
     layer-type: 'fill'
     persist: true
     paint:
-      fill-color: ['get', 'color']
+      fill-color: ['get', 'hex']
       fill-opacity: 1
 
 - title: Brooklyn Navy Yard
@@ -260,7 +260,7 @@
   position: right
   layers:
   - id: 'retailpern'  
-    url: './data/retailneigh.geojson'
+    url: './data/retailneighhex.geojson'
     type: 'fill'
     data-type: 'geojson'
     layer-type: 'fill'

@@ -122,6 +122,15 @@
   media: 
   position: right
   layers:
+  - id: 'health'  
+    url: './data/reprohealth.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'color']
+      fill-opacity: 1
   - id: 'notb'
     url: './data/notbodega.geojson'
     type: 'circle'

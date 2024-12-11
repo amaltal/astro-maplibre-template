@@ -120,7 +120,7 @@
   position: right
   layers:
   - id: 'sizefam'  
-    url: './data/sizefam.geojson'  
+    url: './data/reprofam.geojson'
     type: 'fill'
     data-type: 'geojson'
     layer-type: 'fill'
@@ -128,4 +128,13 @@
     paint:
       fill-color: ['get', 'color']
       fill-opacity: 1
+
+- title: The second is Health.
+  center: [-73.949165, 40.734331]
+  zoom: 10
+  pitch: 20
+  bearing: -10
+  description: By looking at health factors of different neighborhoods and comparing them to food options, a connection is drawn.
+  media: 
+  position: right
 

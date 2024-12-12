@@ -33,7 +33,7 @@
   # center: [-73.995205, 40.715957]
   center: [-73.995205, 40.715957]
   zoom: 10
-  pitch: 10
+  pitch: 0
   bearing: 20
   description: We will be looking at three different areas of interest through the lens of retail food stores in order to explore the story that is able to be told through food. Economic, Health, and Cultural.
   layers:
@@ -322,7 +322,7 @@
   zoom: 9.5
   pitch: 10
   bearing: 20
-  description: We have uncovered just how closely tied retail food options are with so many different facets of every day life, and characteristics of communities. Economic, health, and cultural factors are all influenced or are incluencing food options in New York City.
+  description: We have uncovered just how closely tied retail food options are with so many different facets of every day life, and characteristics of communities. Economic, health, and cultural factors are all influenced or are influencing food options in New York City.
   layers:
   - id: 'retail'
     url: './data/Retail_food.geojson'

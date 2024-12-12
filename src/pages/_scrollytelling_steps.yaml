@@ -7,7 +7,7 @@
 
 - title: Exploring general retail food store options in NYC
   center: [-73.9830259, 40.7118794]
-  zoom: 11
+  zoom: 10
   pitch: 0
   bearing: 20
   description: To start, let's take a look at general retail food store options in NYC, we will dive in deeper.
@@ -32,10 +32,10 @@
 - title: Methods of Exploration
   # center: [-73.995205, 40.715957]
   center: [-73.995205, 40.715957]
-  zoom: 12
+  zoom: 10
   pitch: 10
   bearing: 20
-  description: We will be looking at three different areas of interest through the lens of retail food stores in order to explore the story that is able to be told through food.
+  description: We will be looking at three different areas of interest through the lens of retail food stores in order to explore the story that is able to be told through food. Economic, Health, and Cultural.
   layers:
   - id: 'retail'
     url: './data/Retail_food.geojson'
@@ -89,7 +89,7 @@
       fill-color: ['get', 'color']
       fill-opacity: 1 
   - id: 'bodega'
-    url: './data/bodegalay.geojson'
+    url: './data/retail1.geojson'
     type: 'circle'
   # type of symbol
     data-type: 'geojson'
@@ -97,21 +97,38 @@
     persist: true
     paint:
       circle-radius: 2.5
-      circle-color: '#191970'
-      circle-opacity: 0.7
-  - id: 'notb'
-    url: './data/notbodega.geojson'
-    type: 'circle'
-  # type of symbol
-    data-type: 'geojson'
-    layer-type: 'circle'
-    persist: true
-    paint:
-      circle-radius: 2.5
-      circle-color: '#B0E0E6'
+      circle-color: ['get', 'color']
       circle-opacity: 0.7
   
-
+- title: Economic Exploration
+  center: [-74.002254, 40.714846]
+  zoom: 12.5
+  pitch: 20
+  bearing: -10
+  description: Using the Food Retail Store data, light blue dots represent stores that self categorize as "delis, mart's, or Convennience stores", while dark blue dots are the rest of the retail food options including bigger grocery stores like Whole Foods. It is interesting to see how the "bodegas" are more prevelant in the neighborhoods with lower property value, and the inverse is true as well, higher property areas contain fewer bodegas.
+  media: 
+  position: left
+  layers:
+  - id: 'propval'
+    url: './data/propvalneighborhoodsum.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'color']
+      fill-opacity: 1 
+  - id: 'bodega'
+    url: './data/retail1.geojson'
+    type: 'circle'
+  # type of symbol
+    data-type: 'geojson'
+    layer-type: 'circle'
+    persist: true
+    paint:
+      circle-radius: 2.5
+      circle-color: ['get', 'color']
+      circle-opacity: 0.7
   
 - title: The second is Health.
   center: [-73.949165, 40.734331]
@@ -132,7 +149,7 @@
       fill-color: ['get', 'color']
       fill-opacity: 1
 
-- title: Health Continued
+- title: Health Exploration
   center: [-73.949165, 40.734331]
   zoom: 10
   pitch: 20
@@ -162,7 +179,37 @@
       circle-color: ['get', 'color']
       circle-opacity: 0.9
 
-- title: Health Continued
+- title: Health Exploration
+  center: [-73.997104, 40.726295]
+  zoom: 12.5
+  pitch: 20
+  bearing: -10
+  description: When bodegas are overlaid on top of obesity rates, we can see they are more concentrated in areas of higher obesity.
+  media: 
+  position: right
+  layers:
+  - id: 'health'  
+    url: './data/reprohealth.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+      fill-color: ['get', 'color']
+      fill-opacity: 1
+  - id: 'bodeg'
+    url: './data/bodegalay.geojson'
+    type: 'circle'
+  # type of symbol
+    data-type: 'geojson'
+    layer-type: 'circle'
+    persist: true
+    paint:
+      circle-radius: 3
+      circle-color: ['get', 'color']
+      circle-opacity: 0.9
+
+- title: Health Exploration
   center: [-73.949165, 40.734331]
   zoom: 10
   pitch: 20
@@ -212,7 +259,7 @@
       fill-color: ['get', 'hex']
       fill-opacity: 1
 
-- title: The third is Cultural.
+- title: Cultural Exploration
   center: [-73.949165, 40.734331]
   zoom: 10
   pitch: 20
@@ -231,7 +278,7 @@
       fill-color: ['get', 'hex']
       fill-opacity: 1
 
-- title: The third is Cultural.
+- title: Cultural Exploration
   center: [-73.968820, 40.702441]
   zoom: 13
   pitch: 20

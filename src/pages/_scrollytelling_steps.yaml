@@ -315,3 +315,23 @@
     paint:
       fill-color: ['get', 'hex']
       fill-opacity: 1
+
+- title: In Conclusion... 
+  # center: [-73.995205, 40.715957]
+  center: [-73.995205, 40.715957]
+  zoom: 9.5
+  pitch: 10
+  bearing: 20
+  description: We have uncovered just how closely tied retail food options are with so many different facets of every day life, and characteristics of communities. Economic, health, and cultural factors are all influenced or are incluencing food options in New York City.
+  layers:
+  - id: 'retail'
+    url: './data/Retail_food.geojson'
+    type: 'circle'
+  # type of symbol
+    data-type: 'geojson'
+    layer-type: 'circle'
+    persist: true
+    paint:
+      circle-radius: 5
+      circle-color: '#826260'
+      circle-opacity: 0.8

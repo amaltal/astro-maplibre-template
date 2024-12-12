@@ -6,10 +6,10 @@
   description: Welcome to my Atlas, through this project I have explored food stores in New York City and how different types of food retail is a means to explore different neighborhoods' characteristics. Please scroll to explore for yourself!
 
 - title: Exploring general retail food store options in NYC
-  center: [-73.9830259, 40.7118794]
+  center: [-74.0060, 40.7128]
   zoom: 10
   pitch: 0
-  bearing: 20
+  bearing: 0
   description: To start, let's take a look at general retail food store options in NYC, we will dive in deeper.
   
   layers:
@@ -31,10 +31,10 @@
 
 - title: Methods of Exploration
   # center: [-73.995205, 40.715957]
-  center: [-73.995205, 40.715957]
+  center: [-74.0060, 40.7128]
   zoom: 10
   pitch: 0
-  bearing: 20
+  bearing: 0
   description: We will be looking at three different areas of interest through the lens of retail food stores in order to explore the story that is able to be told through food. Economic, Health, and Cultural.
   layers:
   - id: 'retail'

@@ -335,3 +335,16 @@
       circle-radius: 5
       circle-color: '#826260'
       circle-opacity: 0.8
+
+- title: Sources
+  center: [-73.995205, 40.715957]
+  zoom: 9.5
+  pitch: 10
+  bearing: 20
+  description:
+  - "https://data.cityofnewyork.us/City-Government/Property-Valuation-and-Assessment-Data/yjxr-fw8i/about_data"
+  - "https://www.nyc.gov/site/doh/data/health-tools/maps-gis-data-files-for-download.page"
+  - "https://data.ny.gov/Economic-Development/Retail-Food-Stores/9a8c-vfzj/about_data"
+  - "https://www.nyc.gov/site/planning/planning-level/nyc-population/2020-census.page"
+  layers: []
+
